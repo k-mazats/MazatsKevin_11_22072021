@@ -1,0 +1,70 @@
+.carousel {
+	width: 100%;
+	height: 415px;
+	border-radius: 25px;
+	margin-bottom: 24px;
+}
+.carousel img {
+	width: 100%;
+	height: 100%;
+	object-position: center;
+	object-fit: cover;
+	border-radius: 25px;
+}
+
+.rental {
+	display: flex;
+	flex-wrap: wrap;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	color: #ff6060;
+}
+.rental__basic-info,
+.rental__tags {
+	width: 75%;
+  margin-bottom: 24px;
+}
+.rental__host-info,
+.rental__rating {
+	width: 25%;
+	display: flex;
+	justify-content: flex-end;
+  margin-bottom: 24px;
+}
+.rental__description,
+.rental__equipments {
+	width: 50%;
+  margin-bottom: 24px;
+}
+.rental__details {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.rental_title {
+	font-size: 36px;
+	line-height: 51px;
+	color: #ff6060;
+}
+.rental_location {
+	font-size: 18px;
+	line-height: 26px;
+}
+.rental__host-name {
+	margin-right: 10px;
+	font-size: 18px;
+	line-height: 26px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.rental__host-picture {
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	object-position: center;
+	object-fit: cover;
+}
+.rental__tags{
+	display:flex;
+}
