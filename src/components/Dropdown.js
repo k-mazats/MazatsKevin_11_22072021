@@ -9,6 +9,15 @@ class Dropdown extends React.Component {
 	toggleDropdown = () => {
 		this.setState({ visible: !this.state.visible });
 	};
+	fillContent = (content) =>{
+if (Array.isArray(content)) {
+	return (<ul>{content.map((equipment,index) => (
+		<li key={`equipment${index}`}>{equipment}</li>
+	))}</ul>)
+}else{
+return <p>{content}</p>;
+}
+	}
 	render() {
 		return (
 			<div className="dropdown">
@@ -24,7 +33,8 @@ class Dropdown extends React.Component {
 				</div>
 				{this.state.visible ? (
 					<div className="dropdown__content">
-						<p>{this.props.content}</p>
+						{this.fillContent(this.props.content)}
+						
 					</div>
 				) : null}
 			</div>
