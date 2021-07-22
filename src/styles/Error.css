@@ -1,0 +1,31 @@
+.error {
+	display: flex;
+	flex-direction: column;
+  justify-content: center;
+	text-align: center;
+}
+.error__title {
+	font-family: "Montserrat", sans-serif;
+	font-size: 288px;
+	font-weight: 700;
+	line-height: 411px;
+	letter-spacing: 0em;
+  color: #ff6060;
+  margin: 0;
+}
+.error__message{
+  font-family: "Montserrat", sans-serif;
+font-size: 36px;
+font-weight: 500;
+line-height: 51px;
+color: #ff6060;
+}
+.error__link{
+  font-family: "Montserrat", sans-serif;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 26px;
+color: #ff6060;
+margin-bottom: 159px;
+}
