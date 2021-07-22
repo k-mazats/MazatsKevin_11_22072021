@@ -31,9 +31,14 @@
 	justify-content: flex-end;
   margin-bottom: 24px;
 }
+.rental__dropdowns{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
 .rental__description,
 .rental__equipments {
-	width: 50%;
+	width: 47.5%;
   margin-bottom: 24px;
 }
 .rental__details {

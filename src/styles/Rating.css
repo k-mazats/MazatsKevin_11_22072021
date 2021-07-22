@@ -1,0 +1,8 @@
+.rating__star,
+.rating__star--blank{
+  font-size: 30px;
+  margin: 0 5px;
+}
+.rating__star--blank{
+  color: #E3E3E3;
+}
