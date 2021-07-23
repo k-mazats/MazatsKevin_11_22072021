@@ -1,7 +1,10 @@
-.home{
-  background: #f6f6f6;
-  border-radius: 25px;
-
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.home {
+	background: #f6f6f6;
+	border-radius: 25px;
+	/* width: 100%; */
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+  grid-gap: 20px;
+	place-content: center;
+  justify-content: space-evenly;
 }
