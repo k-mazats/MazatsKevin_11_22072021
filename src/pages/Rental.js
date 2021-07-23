@@ -1,5 +1,6 @@
 import React from "react";
 
+import Carousel from "../components/Carousel";
 import Dropdown from "../components/Dropdown";
 import Tag from "../components/Tag";
 import Rating from "../components/Rating";
@@ -12,9 +13,7 @@ class Rental extends React.Component {
 		return (
 			<div className="layout">
 				<div className="rental">
-					<div className="carousel">
-						<img src={this.props.rental.cover} alt="rental"></img>
-					</div>
+					<Carousel pictures={this.props.rental.pictures}></Carousel>
 					<div className="rental__basic-info">
 						<div className="rental_title">{this.props.rental.title}</div>
 						<div className="rental__location">{this.props.rental.location}</div>

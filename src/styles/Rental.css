@@ -1,17 +1,3 @@
-.carousel {
-	width: 100%;
-	height: 415px;
-	border-radius: 25px;
-	margin-bottom: 24px;
-}
-.carousel img {
-	width: 100%;
-	height: 100%;
-	object-position: center;
-	object-fit: cover;
-	border-radius: 25px;
-}
-
 .rental {
 	display: flex;
 	flex-wrap: wrap;
