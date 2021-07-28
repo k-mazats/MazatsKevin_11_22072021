@@ -1,6 +1,5 @@
 .card{
   border-radius: 10px;
-  margin: 25px;
   aspect-ratio: 1/1;
   background-position: center;
   background-size: cover;
@@ -16,4 +15,9 @@ font-weight: 500;
 line-height: 26px;
 color: #FFFFFF;
 
+}
+@media screen and (max-width: 809px) {
+	.card {
+  aspect-ratio: 355/255;
+  }
 }

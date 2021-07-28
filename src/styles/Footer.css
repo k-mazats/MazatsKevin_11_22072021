@@ -19,6 +19,9 @@
   font-size: 24px;
 }
 @media screen and (max-width: 809px) {
+  .footer{
+    margin-top: 20px;
+  }
 .footer__brand{
   line-height: 17px;
   font-size: 12px;

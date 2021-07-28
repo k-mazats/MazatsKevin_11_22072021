@@ -1,7 +1,3 @@
-.home {
-	/* width: 100%; */
-}
-
 .home-title__wrap {
 	background-image: linear-gradient(
 			180deg,
@@ -32,17 +28,41 @@
 	background: #f6f6f6;
 	border-radius: 25px;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(250px, 340px));
+	gap: 50px 60px;
 	place-content: center;
-	justify-content: space-evenly;
+	justify-content: center;
+	padding: 50px
 }
 @media screen and (max-width: 1023px) {
+	.rentals-grid {
+		grid-template-columns: 1fr 1fr;
+	}
 	.home-title__wrap {
-	height: 111px;
-	border-radius: 10px;
-}
+		height: 111px;
+		border-radius: 10px;
+	}
 	.home-title {
 		font-size: 24px;
 		line-height: 24px;
+	}
+}
+@media screen and (max-width: 809px) {
+	.home-title__wrap {
+		height: 111px;
+		border-radius: 10px;
+		margin-bottom: 20px;
+	}
+	.home-title {
+		font-size: 24px;
+		line-height: 24px;
+	}
+	.rentals-grid {
+		grid-template-columns: 1fr;
+		gap: 20px 0;
+		place-content: center;
+		justify-content: center;
+		padding: 0;
+		background: transparent;
 	}
 }
