@@ -1,8 +1,10 @@
 .error {
 	display: flex;
 	flex-direction: column;
-  justify-content: center;
+	justify-content: center;
 	text-align: center;
+	width: 100%;
+	min-height: calc(100vh - 361px);
 }
 .error__title {
 	font-family: "Montserrat", sans-serif;
@@ -10,22 +12,43 @@
 	font-weight: 700;
 	line-height: 411px;
 	letter-spacing: 0em;
-  color: #ff6060;
-  margin: 0;
+	color: #ff6060;
+	margin: 0;
 }
-.error__message{
-  font-family: "Montserrat", sans-serif;
-font-size: 36px;
-font-weight: 500;
-line-height: 51px;
-color: #ff6060;
+.error__message {
+	font-family: "Montserrat", sans-serif;
+	font-size: 36px;
+	font-weight: 500;
+	line-height: 51px;
+	color: #ff6060;
 }
-.error__link{
-  font-family: "Montserrat", sans-serif;
-font-size: 18px;
-font-style: normal;
-font-weight: 500;
-line-height: 26px;
-color: #ff6060;
-margin-bottom: 159px;
+.error__link {
+	font-family: "Montserrat", sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 26px;
+	color: #ff6060;
+}
+@media screen and (max-width: 809px) {
+	.error {
+	min-height: calc(100vh - 296px);
+}
+	.error__title {
+		font-size: 96px;
+
+		line-height: 137px;
+
+		margin: 0;
+	}
+	.error__message {
+		font-size: 18px;
+
+		line-height: 26px;
+	}
+	.error__link {
+		font-size: 14px;
+
+		line-height: 20px;
+	}
 }
