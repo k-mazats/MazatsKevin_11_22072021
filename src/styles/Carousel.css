@@ -27,4 +27,16 @@
 .carousel__controls--previous{
   left:0;
 }
+@media screen and (max-width: 809px) {
+.carousel {
+	height: 255px;
+	border-radius: 10px;
+	margin-bottom: 15px;
+}
+.carousel__controls{
+  
+  font-size: 19px;
+  padding: 6px;
+}
+}
 

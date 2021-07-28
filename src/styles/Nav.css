@@ -22,3 +22,18 @@
 .nav__link--active{
   text-decoration : underline;
 }
+@media screen and (max-width: 809px) {
+
+.nav__link{
+	font-size: 12px;
+	line-height: 17px;
+	text-transform: uppercase;
+}
+.nav__list{
+	padding-inline-start: 0;
+	justify-content: space-evenly;
+}
+.nav__list-item{
+	width: auto;
+}
+}

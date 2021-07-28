@@ -30,7 +30,7 @@ class Rental extends React.Component {
 						></img>
 					</div>
 
-					<div className="rental__details">
+					
 						<div className="rental__tags">{this.props.rental.tags.map( (tag,index) => (<Tag title={tag} key={`${tag}-${index}`}></Tag>))}</div>
 						<div className="rental__rating">{<Rating rating={this.props.rental.rating}></Rating>}</div>
 						<div className="rental__dropdowns">
@@ -47,7 +47,7 @@ class Rental extends React.Component {
 								></Dropdown>
 							</div>
 						</div>
-					</div>
+					
 				</div>
 			</div>
 		);

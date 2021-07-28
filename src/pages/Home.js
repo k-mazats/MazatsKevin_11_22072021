@@ -12,13 +12,18 @@ class Home extends React.Component {
 		return (
 			<div className="layout">
 				<div className="home">
-					{this.props.rentals.map((rental) => (
-						<Link to={`/rental/${rental.id}`}key={rental.id}><Card
-							rental={rental}
-							
-							
-						></Card></Link>
-					))}
+					<div className="section-title_wrap">
+						<h1 className="section-title">
+							Chez vous, partout et ailleurs
+						</h1>
+					</div>
+					<div className="rentals-grid">
+						{this.props.rentals.map((rental) => (
+							<Link to={`/rental/${rental.id}`} key={rental.id}>
+								<Card rental={rental}></Card>
+							</Link>
+						))}
+					</div>
 				</div>
 			</div>
 		);

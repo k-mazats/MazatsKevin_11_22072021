@@ -6,3 +6,9 @@
 .rating__star--blank{
   color: #E3E3E3;
 }
+@media screen and (max-width: 809px) {
+  .rating__star,
+.rating__star--blank{
+  font-size: 15px;
+}
+}
