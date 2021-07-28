@@ -1,5 +1,31 @@
-.about{
-  margin: 0 108px;
-  display: flex;
-  flex-direction: column;
+.about {
+	margin: 0 108px;
+	display: flex;
+	flex-direction: column;
+}
+.about-title__wrap {
+	background-image: linear-gradient(
+			180deg,
+			rgba(0, 0, 0, 0.5) 0%,
+			rgba(0, 0, 0, 0.5) 100%
+		),
+		url("../img/about-cover.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 25px;
+	height: 223px;
+	display: flex;
+	padding: 0 16px;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 1023px) {
+	.about {
+		margin: 0;
+	}
+	.about-title__wrap {
+		height: 111px;
+		border-radius: 10px;
+    margin-bottom: 10px;
+	}
 }

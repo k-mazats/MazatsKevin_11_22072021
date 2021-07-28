@@ -27,9 +27,12 @@
 	padding: 18px;
 }
 .dropdown-wrapper {
-	margin: 31px 0;
+	margin: 15px 0;
 }
 @media screen and (max-width: 809px) {
+	.dropdown-wrapper {
+	margin: 10px 0;
+}
 	.dropdown__toggle {
 		font-size: 13px;
 		line-height: 19px;

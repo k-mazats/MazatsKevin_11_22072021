@@ -10,6 +10,9 @@ class About extends React.Component {
 		return (
 			<div className="layout">
 				<div className="about">
+					<div className="about-title__wrap">
+						
+					</div>
 					<div className="dropdown-wrapper">
 						<Dropdown
 							title="Fiabilité"

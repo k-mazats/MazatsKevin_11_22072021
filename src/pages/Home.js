@@ -12,8 +12,8 @@ class Home extends React.Component {
 		return (
 			<div className="layout">
 				<div className="home">
-					<div className="section-title_wrap">
-						<h1 className="section-title">
+					<div className="home-title__wrap">
+						<h1 className="home-title">
 							Chez vous, partout et ailleurs
 						</h1>
 					</div>
