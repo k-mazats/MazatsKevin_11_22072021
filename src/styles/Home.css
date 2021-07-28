@@ -28,7 +28,7 @@
 	background: #f6f6f6;
 	border-radius: 25px;
 	display: grid;
-	grid-template-columns: repeat(3, minmax(250px, 340px));
+	grid-template-columns: repeat(3, 1fr);
 	gap: 50px 60px;
 	place-content: center;
 	justify-content: center;
@@ -37,7 +37,8 @@
 .rentals-grid a {
 	text-decoration: none;
 }
-@media screen and (max-width: 1024px) {
+
+@media screen and (max-width: 1200px) {
 	.rentals-grid {
 		grid-template-columns: 1fr 1fr;
 	}
