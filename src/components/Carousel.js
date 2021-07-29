@@ -5,6 +5,7 @@ import "../styles/Carousel.css";
 class Carousel extends React.Component {
 	state = {
 		currentPicture: 0,
+		morePictures: false,
 	};
 	nextPicture = () => {
 		this.state.currentPicture === this.props.pictures.length - 1
@@ -23,29 +24,39 @@ class Carousel extends React.Component {
 			callback();
 		}
 	};
+	isThereMorePicture = () => {
+		return this.props.pictures.length > 1;
+	};
+	componentDidMount() {
+		this.setState({ morePictures: this.isThereMorePicture() });
+	}
 	render() {
 		return (
 			<div className="carousel">
-				<div
-					className="carousel__controls carousel__controls--previous"
-					onClick={this.previousPicture}
-					onKeyPress={(event) => {
-						this.handleKeyPress(event, this.previousPicture);
-					}}
-					tabIndex="0"
-				>
-					<i className="fas fa-chevron-left"></i>
-				</div>
-				<div
-					className="carousel__controls carousel__controls--next"
-					onClick={this.nextPicture}
-					onKeyPress={(event) => {
-						this.handleKeyPress(event, this.nextPicture);
-					}}
-					tabIndex="0"
-				>
-					<i className="fas fa-chevron-right"></i>
-				</div>
+				{this.state.morePictures ? (
+					<div
+						className="carousel__controls carousel__controls--previous"
+						onClick={this.previousPicture}
+						onKeyPress={(event) => {
+							this.handleKeyPress(event, this.previousPicture);
+						}}
+						tabIndex="0"
+					>
+						<i className="fas fa-chevron-left"></i>
+					</div>
+				) : null}
+				{this.state.morePictures ? (
+					<div
+						className="carousel__controls carousel__controls--next"
+						onClick={this.nextPicture}
+						onKeyPress={(event) => {
+							this.handleKeyPress(event, this.nextPicture);
+						}}
+						tabIndex="0"
+					>
+						<i className="fas fa-chevron-right"></i>
+					</div>
+				) : null}
 				<img
 					src={this.props.pictures[this.state.currentPicture]}
 					alt="rental"
