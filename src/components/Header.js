@@ -7,7 +7,7 @@ import "../styles/Header.css";
 class Header extends React.Component {
 	render() {
 		return (
-			<div className="header">
+			<header className="header">
 				<div>
 					<svg
 						width="211"
@@ -39,7 +39,7 @@ class Header extends React.Component {
 					</svg>
 				</div>
 				<Nav></Nav>
-			</div>
+			</header>
 		);
 	}
 }

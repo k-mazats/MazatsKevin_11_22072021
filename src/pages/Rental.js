@@ -11,7 +11,7 @@ import "../styles/Rental.css";
 class Rental extends React.Component {
 	render() {
 		return (
-			<div className="layout">
+			<main className="layout">
 				<div className="rental">
 					<Carousel pictures={this.props.rental.pictures}></Carousel>
 					<div className="rental__basic-info">
@@ -49,7 +49,7 @@ class Rental extends React.Component {
 						</div>
 					
 				</div>
-			</div>
+			</main>
 		);
 	}
 }

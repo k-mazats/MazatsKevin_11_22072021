@@ -38,6 +38,7 @@ class Dropdown extends React.Component {
 					onKeyPress={this.handleKeyPress}
 					tabIndex="0"
 					role="button"
+					aria-pressed={this.state.visible}
 					aria-expanded={this.state.visible}
 				>
 					<div className="dropdown__toggle-title">{this.props.title}</div>

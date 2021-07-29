@@ -18,7 +18,7 @@ class Carousel extends React.Component {
 			: this.setState({ currentPicture: this.state.currentPicture - 1 });
 	};
 	handleKeyPress = (e, callback) => {
-		if (e.charCode === 13) {
+		if (e.key === "Enter" || e.key === " ") {
 			e.preventDefault();
 			e.stopPropagation();
 			callback();
@@ -32,7 +32,12 @@ class Carousel extends React.Component {
 	}
 	render() {
 		return (
-			<div className="carousel">
+			<div
+				className="carousel"
+				role="region"
+				aria-roledescription="carousel"
+				aria-label="Photos de l'appartement"
+			>
 				{this.state.morePictures ? (
 					<div
 						className="carousel__controls carousel__controls--previous"
@@ -41,10 +46,27 @@ class Carousel extends React.Component {
 							this.handleKeyPress(event, this.previousPicture);
 						}}
 						tabIndex="0"
+						role="button"
+						aria-label="Photo précédante"
 					>
 						<i className="fas fa-chevron-left"></i>
 					</div>
 				) : null}
+				<div
+					className="carousel__img-wrap"
+					role="group"
+					aria-roledescription="slide"
+				>
+					<img
+						className="carousel__img"
+						src={this.props.pictures[this.state.currentPicture]}
+						alt="Vue de l'appartement"
+						aria-label={`Photo ${this.state.currentPicture + 1} sur ${
+							this.props.pictures.length
+						}`}
+					></img>
+				</div>
+
 				{this.state.morePictures ? (
 					<div
 						className="carousel__controls carousel__controls--next"
@@ -53,14 +75,12 @@ class Carousel extends React.Component {
 							this.handleKeyPress(event, this.nextPicture);
 						}}
 						tabIndex="0"
+						role="button"
+						aria-label="Prochaine photo"
 					>
 						<i className="fas fa-chevron-right"></i>
 					</div>
 				) : null}
-				<img
-					src={this.props.pictures[this.state.currentPicture]}
-					alt="rental"
-				></img>
 			</div>
 		);
 	}

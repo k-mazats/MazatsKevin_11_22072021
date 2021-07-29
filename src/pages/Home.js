@@ -10,7 +10,7 @@ import "../styles/Home.css";
 class Home extends React.Component {
 	render() {
 		return (
-			<div className="layout">
+			<main className="layout">
 				<div className="home">
 					<div className="home-title__wrap">
 						<h1 className="home-title">
@@ -25,7 +25,7 @@ class Home extends React.Component {
 						))}
 					</div>
 				</div>
-			</div>
+			</main>
 		);
 	}
 }

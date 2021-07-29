@@ -8,7 +8,7 @@ import "../styles/About.css";
 class About extends React.Component {
 	render() {
 		return (
-			<div className="layout">
+			<main className="layout">
 				<div className="about">
 					<div className="about-title__wrap">
 						
@@ -38,7 +38,7 @@ class About extends React.Component {
 						></Dropdown>
 					</div>
 				</div>
-			</div>
+			</main>
 		);
 	}
 }

@@ -5,7 +5,7 @@ import "../styles/Error.css";
 class Error extends React.Component {
 	render() {
 		return (
-			<div className="layout">
+			<main className="layout">
 				<div className="error">
 					<h1 className="error__title">404</h1>
 					<p className="error__message">
@@ -15,7 +15,7 @@ class Error extends React.Component {
 						Retourner sur la page d’accueil
 					</Link>
 				</div>
-			</div>
+			</main>
 		);
 	}
 }

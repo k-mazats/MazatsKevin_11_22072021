@@ -4,7 +4,7 @@ import '../styles/Footer.css'
 class Footer extends React.Component {
 	render() {
 		return (
-			<div className="footer">
+			<footer className="footer">
 				<div>
 					<svg
 						width="122"
@@ -37,7 +37,7 @@ class Footer extends React.Component {
 				</div>
 
 				<div className="footer__brand">© 2020 Kasa. All rights reserved</div>
-			</div>
+			</footer>
 		);
 	}
 }

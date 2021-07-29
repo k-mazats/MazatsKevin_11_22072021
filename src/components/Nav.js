@@ -7,7 +7,7 @@ import "../styles/Nav.css";
 class Nav extends React.Component {
 	render() {
 		return (
-			<div className="nav">
+			<nav className="nav">
 				<ul className="nav__list">
 					<li className="nav__list-item">
 						<NavLink
@@ -28,7 +28,7 @@ class Nav extends React.Component {
 						</NavLink>
 					</li>
 				</ul>
-			</div>
+			</nav>
 		);
 	}
 }
