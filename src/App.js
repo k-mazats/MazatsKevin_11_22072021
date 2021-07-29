@@ -1,45 +1,29 @@
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
 
-import ScrollToTop from './components/ScrollToTop';
+import ScrollToTop from "./components/ScrollToTop";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-import Home from './pages/Home'
-import Rental from "./pages/Rental";
-import About from './pages/About'
-import Error from './pages/Error'
+import KasaRouter from "./components/KasaRouter";
 
 import rentals from "./datas/logements.json";
 
-function App() {
-	return (
-		<div className="App">
-			<Router>
-				<ScrollToTop />
-				<Header></Header>
-				<Switch>
-					{rentals.map((rental) => (
-						<Route exact path={`/rental/${rental.id}`} key={rental.id}>
-							<Rental rental={rental} />
-						</Route>
-					))}
-
-					<Route exact path="/about">
-						<About />
-					</Route>
-					<Route exact path="/">
-						<Home rentals={rentals} />
-					</Route>
-					<Route path="/">
-						<Error />
-					</Route>
-				</Switch>
-				<Footer></Footer>
-			</Router>
-		</div>
-	);
+class App extends React.Component {
+	render() {
+		return (
+			<div className="App">
+				<Router>
+					<ScrollToTop />
+					<Header></Header>
+					<KasaRouter rentals={rentals}></KasaRouter>
+					<Footer></Footer>
+				</Router>
+			</div>
+		);
+	}
 }
 
 export default App;
