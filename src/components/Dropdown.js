@@ -23,7 +23,7 @@ class Dropdown extends React.Component {
 		}
 	};
 	handleKeyPress = (e) => {
-		if (e.charCode === 13) {
+		if (e.key === "Enter" || e.key === " ") {
 			e.preventDefault();
 			e.stopPropagation();
 			this.toggleDropdown()
@@ -37,6 +37,8 @@ class Dropdown extends React.Component {
 					onClick={this.toggleDropdown}
 					onKeyPress={this.handleKeyPress}
 					tabIndex="0"
+					role="button"
+					aria-expanded={this.state.visible}
 				>
 					<div className="dropdown__toggle-title">{this.props.title}</div>
 					<div className="dropdown__toggle-icon">
